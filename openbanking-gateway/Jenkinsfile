@@ -232,7 +232,7 @@ def deploy(folderName, projName, openShiftHost, openShiftToken) {
     oc whoami
     oc project ${projName}
 
-    mvn fabric8:deploy -Dmaven.test.skip=true -s configuration/settings.xml -Popenshift
+    mvn fabric8:deploy -Dmaven.test.skip=true -s configuration/settings.xml 
     """
 }
 
